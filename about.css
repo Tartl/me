@@ -32,9 +32,9 @@ header{
     height: 100vh;
     display: flex;
     flex-direction: column;
-    align-items: left;
+    align-items: center;
     justify-content: center;
-    background: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url("./header.jpg") no-repeat center;
+    background: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url("./about.jpg") no-repeat center;
     background-size: cover;
     background-attachment: fixed;
     padding-left: 30px;
@@ -44,9 +44,6 @@ main{
     margin:0 auto;
     padding: 20px;
 }
-section{
-    margin: 400px 0;
-}
 h1{
     font-size: 80px;
 }
@@ -54,40 +51,26 @@ h1{
 h2{
     font-size: 60px;
 }
-.about h2{
-    text-align: right;
-}
-.projects{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+.about{
     margin: 200px 0;
     padding: 20px;
     text-align: right;
 }
 
-.projects:nth-child(odd){
+.about:nth-child(odd){
     flex-direction: row-reverse;
     text-align: left;
 }
 
-.projects img{  
-    flex: 1;
-    width: 100%;
-    height: auto;
-    max-height: 400px;
-    object-fit: cover;
-}
-
-
-.projects h3{
+.about h3{
     font-size: 48px;
     font-weight: bold;
     letter-spacing: 2px;
     margin-bottom: 20px;
+    white-space: nowrap;
 }
 
-.projects-text{
+.about-text{
     display: block;
     padding: 20px;
     max-width: 600px;
