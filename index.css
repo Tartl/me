@@ -6,13 +6,22 @@ body{
     color: white;
     background-color: rgb(70, 65, 61);
 }
-
+a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
 .navbar{
-background-color: gray;
+background-color: rgb(65, 53, 43);;
 text-align: center;
 position: sticky;
 padding: 15px 0;
 top: 0;
+}
+
+.navbar a{
+    border-radius: 5px;
+    padding: 10px 20px;
 }
 
 header{
@@ -24,4 +33,13 @@ header{
     background: url("./header.jpg") no-repeat center;
     background-size: cover;
     background-attachment: fixed;
+    padding-left: 30px;
+}
+h1{
+    font-size: 60px;
+}
+
+footer{
+    background-color: rgb(65, 53, 43);;;
+    text-align: center;
 }
