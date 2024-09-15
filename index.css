@@ -63,12 +63,12 @@ h2{
     justify-content: space-between;
     margin: 200px 0;
     padding: 20px;
-    text-align: right;
+    text-align: left;
 }
 
 .projects:nth-child(odd){
     flex-direction: row-reverse;
-    text-align: left;
+    text-align: right;
 }
 
 .projects img{  
@@ -98,4 +98,11 @@ footer{
     text-align: center;
     padding-bottom: 50px;
     padding-top: 20px;
+}
+@media only screen and (max-width: 400px) {
+    .projects{  
+        display:inline;
+        align-items: center;
+        justify-content: flex-start;
+    }
 }
