@@ -82,3 +82,11 @@ footer{
     padding-bottom: 50px;
     padding-top: 20px;
 }
+@media only screen and (max-width: 600px) {
+    .about{  
+        display:inline;
+        align-items: center;
+        justify-content: flex-start;
+        margin: 300px 0;
+    }
+}
