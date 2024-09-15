@@ -15,6 +15,7 @@ a{
 a:hover{
     color: rgb(13, 110, 26);  
 }
+
 .navbar{
 background-color: rgb(65, 53, 43);;
 text-align: center;
@@ -39,14 +40,17 @@ header{
     background-attachment: fixed;
     padding-left: 30px;
 }
+
 main{
     max-width: 1400px;
     margin:0 auto;
     padding: 20px;
 }
+
 section{
     margin: 400px 0;
 }
+
 h1{
     font-size: 80px;
 }
