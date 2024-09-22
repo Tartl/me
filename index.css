@@ -98,6 +98,7 @@ footer{
     padding-bottom: 50px;
     padding-top: 20px;
 }
+
 @media only screen and (max-width: 600px) {
     .projects{  
         display:inline;
