@@ -28,7 +28,13 @@ h1 {
     color: white;
     font-size: clamp(2em, 2vw, 4em);
     font-weight: 800;
+
 }
+.magic-text {
+    font-size: 48px;
+    transition: 1s;
+}
+
 
 h1:hover > .magic-text {
     animation: background-pan 3s linear infinite;
@@ -44,6 +50,9 @@ h1:hover > .magic-text {
     -webkit-text-fill-color: transparent;
     white-space: nowrap;
     cursor: default;
+    font-size: 60px;
+
+    transition: 1s;
 }
 
 a{
@@ -75,7 +84,7 @@ header{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url("./header.jpg") no-repeat center;
+    background: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2));
     background-size: cover;
     background-attachment: fixed;
     padding-left: 30px;
@@ -135,13 +144,27 @@ footer{
     padding-bottom: 50px;
     padding-top: 20px;
 }
-
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 576px) {
     .projects{  
         display:inline;
         align-items: center;
         justify-content: flex-start;
         margin: 300px 0;
+    }
+    .navbar a{
+        font-size: 20px;
+    }
+}
+@media only screen and (max-width: 430px) {
+    .navbar a{
+        font-size: 16px;
+        font-weight: 600;
+        padding: 10px 10px;
+    }
+}
+@media only screen and (max-width: 376px) {
+    .navbar a{
+        padding: 10px 5px;
     }
 }
 
