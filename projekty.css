@@ -41,12 +41,6 @@ header{
     padding-left: 30px;
 }
 
-main{
-    max-width: 1400px;
-    margin:0 auto;
-    padding: 20px;
-}
-
 section{
     margin: 400px 0;
 }
@@ -63,16 +57,15 @@ h2{
 }
 .projects{
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    align-items: center; 
+    justify-content:space-between;
     margin: 200px 0;
-    padding: 20px;
-    text-align: right;
+    text-align: left;
 }
 
 .projects:nth-child(odd){
     flex-direction: row-reverse;
-    text-align: left;
+    text-align: right;
 }
 
 .projects img{  
@@ -101,6 +94,11 @@ h2{
     padding: 20px;
     max-width: 600px;
 }
+
+.container{
+    width: 80%;
+    margin: auto;
+  }
 
 footer{
     background-color: rgb(65, 53, 43);;;
