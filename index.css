@@ -14,6 +14,34 @@ body{
     background-color: rgb(32, 27, 22);
 }
 
+.navbar{
+    background-color: rgb(65, 53, 43);
+    position: fixed;
+    width: 100%;
+    padding: 24px 0;
+    z-index: 1;
+}
+
+.navbar .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+}
+
+nav{
+    font-size: 24px;
+    text-align: right;
+}
+
+nav a{
+    padding-left: 40px;
+}
+
 @keyframes background-pan {
     from {
       background-position: 0% center;
@@ -30,6 +58,90 @@ h1 {
     font-weight: 800;
 
 }
+
+
+a{
+    color: white;
+    text-decoration: none;
+
+    transition: .5s;
+}
+a:hover{
+    color: rgb(13, 110, 26);  
+}
+
+header{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2));
+    background-size: cover;
+    background-attachment: fixed;
+}
+main{
+    margin:0 auto;
+}
+section{
+    margin: 400px 0;
+}
+h2{
+    font-size: 60px;
+}
+.about h2{
+    text-align: right;
+}
+.projects{
+    display: flex;
+    align-items: center; 
+    justify-content:space-between;
+    margin: 200px 0;
+    text-align: left;
+}
+
+.projects:nth-child(odd){
+    flex-direction: row-reverse;
+    text-align: right;
+}
+
+.projects img{  
+    flex: 1;
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+    object-fit: cover;
+
+    transition: .5s;
+}
+
+.projects img:hover{
+    transform: scale(110%);
+}
+
+
+.projects h3{
+    font-size: 48px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+.projects-text{
+    display: block;
+    max-width: 40%;
+}
+
+.projects-text p{
+    color: rgb(97, 87, 78);  
+}
+footer{
+    position: fixed;
+    left: 20px;
+    bottom: 20px;
+    font-size: 20px;
+}
+
 .magic-text {
     font-size: 48px;
     transition: 1s;
@@ -55,95 +167,6 @@ h1:hover > .magic-text {
     transition: 1s;
 }
 
-a{
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-
-    transition: .5s;
-}
-a:hover{
-    color: rgb(13, 110, 26);  
-}
-.navbar{
-background-color: rgb(65, 53, 43);
-text-align: center;
-position: sticky;
-padding: 15px 0;
-top: 0;
-}
-
-.navbar a{
-    border-radius: 5px;
-    padding: 10px 20px;
-}
-
-header{
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2));
-    background-size: cover;
-    background-attachment: fixed;
-    padding-left: 30px;
-}
-main{
-    max-width: 1400px;
-    margin:0 auto;
-    padding: 20px;
-}
-section{
-    margin: 400px 0;
-}
-h2{
-    font-size: 60px;
-}
-.about h2{
-    text-align: right;
-}
-.projects{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: 200px 0;
-    padding: 20px;
-    text-align: left;
-}
-
-.projects:nth-child(odd){
-    flex-direction: row-reverse;
-    text-align: right;
-}
-
-.projects img{  
-    flex: 1;
-    width: 100%;
-    height: auto;
-    max-height: 400px;
-    object-fit: cover;
-}
-
-
-.projects h3{
-    font-size: 48px;
-    font-weight: bold;
-    letter-spacing: 2px;
-    margin-bottom: 20px;
-}
-
-.projects-text{
-    display: block;
-    max-width: 500px;
-}
-
-footer{
-    background-color: rgb(65, 53, 43);;;
-    text-align: center;
-    padding-bottom: 50px;
-    padding-top: 20px;
-}
 @media only screen and (max-width: 576px) {
     .projects{  
         display:inline;

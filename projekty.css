@@ -17,16 +17,31 @@ a:hover{
 }
 
 .navbar{
-background-color: rgb(65, 53, 43);;
-text-align: center;
-position: sticky;
-padding: 15px 0;
-top: 0;
+    background-color: rgb(65, 53, 43);;
+    position: fixed;
+    width: 100%;
+    padding: 15px 0;
 }
 
-.navbar a{
-    border-radius: 5px;
-    padding: 10px 20px;
+.navbar .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+}
+
+nav{
+    font-size: 24px;
+    text-align: right;
+}
+
+nav a{
+    padding-left: 20px;
+
 }
 
 header{
@@ -91,14 +106,8 @@ h2{
 
 .projects-text{
     display: block;
-    padding: 20px;
-    max-width: 600px;
+    max-width: 500px;
 }
-
-.container{
-    width: 80%;
-    margin: auto;
-  }
 
 footer{
     background-color: rgb(65, 53, 43);;;
