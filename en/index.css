@@ -22,6 +22,11 @@ body{
     z-index: 1;
 }
 
+.navbar .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
 .container{
     width: 80%;
@@ -34,7 +39,7 @@ nav{
 }
 
 nav a{
-    padding-left: 35px;
+    padding-left: 40px;
     font-weight: normal;
 }
 .en{
@@ -53,7 +58,7 @@ nav a{
 
 h1 {
     color: white;
-    font-size: 48px;
+    font-size: clamp(2em, 2vw, 4em);
     font-weight: 800;
 
 }
@@ -63,6 +68,7 @@ a{
     color: white;
     text-decoration: none;
     font-weight: bold;
+
     transition: .5s;
 }
 a:hover{
@@ -93,6 +99,7 @@ h2{
 }
 .projects{
     display: flex;
+    align-items: center; 
     justify-content:space-between;
     margin: 200px 0;
     text-align: left;
@@ -116,6 +123,7 @@ h2{
 .projects img:hover{
     transform: scale(110%);
 }
+
 
 .projects h3{
     font-size: 48px;
@@ -163,125 +171,28 @@ h1:hover > .magic-text {
 
     transition: 1s;
 }
-@media only screen and (max-width: 1576px) {
-    .projects img{
-        max-height: 300px;
-    }
-}
-@media only screen and (max-width: 1176px) {
-    .projects img{
-        max-height: 200px;
-    }
-}
-@media only screen and (max-width: 976px) {
-    .projects h3{
-        font-size: 40px;
-    }
-}
-@media only screen and (max-width: 776px) {
-    nav{
-        font-size: 20px;
-    }
-    nav a{
-        padding-left: 25px;
-    }
-    h1{
-        font-size: 40px;
-    }
-    h2{
-        font-size: 40px;
-    }
-    .projects h3{
-        font-size: 32px;
-    }
-    .magic-text{
-        animation: background-pan 3s linear infinite;
-        background: linear-gradient(
-            to right,
-            var(--blue),
-            var(--green),
-            var(--yellow),
-            var(--blue)
-        );
-        background-size: 200%;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        white-space: nowrap;
-        cursor: default;
-        font-size: 40px;
-    }
-    .projects{
-        display: inline;
-        margin: 200px 0;
-        text-align: center;
-        align-items: center;
-    }
-    .projects img{
-        object-fit: scale-down;
-    }
-    .projects-text{  
-        display:inline;
-        align-items: center;
-        justify-content: flex-start;
-        margin: 300px 0;
-    }
-    .projects:nth-child(odd)
-    {
-        text-align: center;
-    }
-}
+
 @media only screen and (max-width: 576px) {
-    .projects-text{  
+    .projects{  
         display:inline;
         align-items: center;
         justify-content: flex-start;
         margin: 300px 0;
     }
-    nav a{
-        display: none;
-    }
-    h1{
-        font-size: 32px;
-    }
-    .magic-text{
-        font-size: 32px;
-    }
-    h1:hover > .magic-text {
-        font-size: 36px;
-    }
-    p{
+    .navbar a{
         font-size: 20px;
     }
 }
 @media only screen and (max-width: 430px) {
-    h1{
-        font-size: 28px;
-    }
-    .magic-text{
-        font-size: 28px;
-    }
-    h1:hover > .magic-text {
-        font-size: 28px;
+    .navbar a{
+        font-size: 16px;
+        font-weight: 600;
+        padding: 10px 10px;
     }
 }
 @media only screen and (max-width: 376px) {
-    h1{
-        font-size: 24px;
-    }
-    .magic-text{
-        font-size: 24px;
-    }
-    h1:hover > .magic-text {
-        font-size: 28px;
-    }
-    h2{
-        font-size: 28px;
-    }
-    .projects h3{
-        font-size: 24px;
-    }
-    p{
-        font-size: 16px;
+    .navbar a{
+        padding: 10px 5px;
     }
 }
 
