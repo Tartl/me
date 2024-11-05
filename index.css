@@ -2,6 +2,8 @@
     --blue: rgb(6, 145, 187);
     --green: rgb(24, 185, 45);
     --yellow: rgb(238, 255, 0);
+    --primary:rgb(32, 27, 22);
+    --secondary:rgb(13, 110, 26);  
   }
 
 body{
@@ -11,17 +13,16 @@ body{
     min-height: 100vh;
     padding: 0;
     color: white;
-    background-color: rgb(32, 27, 22);
+    background-color: var(--primary);
 }
 
-.navbar{
+.navbar {
     background-color: rgb(65, 53, 43);
-    position: fixed;
     width: 100%;
     padding: 24px 0;
     z-index: 1;
+    position: fixed;
 }
-
 
 .container{
     width: 80%;
@@ -42,6 +43,28 @@ nav a{
     font-size: 20px;
 }
 
+@keyframes fade-left{
+    0%{
+        opacity: 0;
+        transform: translateX(200px) scale(.9);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0px) scale(1);
+    }
+}
+@keyframes fade-right{
+    0%{
+
+        opacity: 0;
+        transform: translateX(-200px) scale(.9);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0px) scale(1);
+    }
+}
+
 @keyframes background-pan {
     from {
       background-position: 0% center;
@@ -51,14 +74,38 @@ nav a{
       background-position: 200% center;
     }
   }
+.back-to-top{
+    height: 50px;
+    width: auto;
+    background-color: var(--secondary);
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
 
+    border-radius: 50%;   
+    z-index: 999;
+    opacity: 0; 
+
+    transition: opacity .3s ease-in-out;
+}
+.back-to-top svg {
+    width: 50px;
+    height: auto; 
+    color: white; 
+
+    transition: .5s;
+}
+.back-to-top svg:hover {
+    width: 50px;
+    height: auto; 
+    color: rgb(167, 167, 167); 
+}
 h1 {
     color: white;
     font-size: 48px;
     font-weight: 800;
 
 }
-
 
 a{
     color: white;
@@ -67,7 +114,7 @@ a{
     transition: .5s;
 }
 a:hover{
-    color: rgb(13, 110, 26);  
+    color: var(--secondary);
 }
 
 header{
@@ -79,6 +126,16 @@ header{
     background: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2));
     background-size: cover;
     background-attachment: fixed;
+}
+header h1{
+    animation: fade-left 2s;
+}
+header p{
+    opacity: 0;
+    animation-name: fade-right;
+    animation-duration: 1.6s;
+    animation-delay:0.4s;
+    animation-fill-mode: forwards;
 }
 main{
     margin:0 auto;
@@ -196,19 +253,6 @@ h1:hover > .magic-text {
         font-size: 32px;
     }
     .magic-text{
-        animation: background-pan 3s linear infinite;
-        background: linear-gradient(
-            to right,
-            var(--blue),
-            var(--green),
-            var(--yellow),
-            var(--blue)
-        );
-        background-size: 200%;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        white-space: nowrap;
-        cursor: default;
         font-size: 40px;
     }
     .projects{
