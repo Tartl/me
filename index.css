@@ -33,12 +33,28 @@ nav{
     font-size: 24px;
     text-align: right;
 }
-
-nav a{
+nav .menu-icon {
+    cursor: pointer;
+}
+nav .nav-links a {
     padding-left: 35px;
     font-weight: normal;
 }
-
+.dropdown-menu{
+    display: none;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    padding: 10px 0;
+    z-index: 10;
+    opacity: 0;
+}
+.dropdown-menu.active {
+    display: flex; 
+    opacity: 1; 
+}
 .en{
     font-size: 20px;
 }
@@ -76,17 +92,19 @@ nav a{
   }
 .back-to-top{
     height: 50px;
-    width: auto;
-    background-color: var(--secondary);
+    width: 50px;
+    background-color: rgb(80, 71, 64);  
     position: fixed;
-    bottom: 50px;
-    right: 50px;
-
+    bottom: 20px;
+    right: 20px;
+    padding: 5px;
     border-radius: 50%;   
     z-index: 999;
     opacity: 0; 
 
     transition: opacity .3s ease-in-out;
+
+    transition: .5s;
 }
 .back-to-top svg {
     width: 50px;
@@ -95,10 +113,8 @@ nav a{
 
     transition: .5s;
 }
-.back-to-top svg:hover {
-    width: 50px;
-    height: auto; 
-    color: rgb(167, 167, 167); 
+.back-to-top:hover {
+    background-color: rgb(65, 53, 43);
 }
 h1 {
     color: white;
@@ -221,6 +237,22 @@ h1:hover > .magic-text {
 
     transition: 1s;
 }
+@media (max-width: 635px) {
+    nav .nav-links {
+        display: none; /* Hide links */
+    }
+    
+    nav .menu-icon {
+        display: block; /* Show menu icon */
+    }
+}
+
+/* For larger screens, ensure the menu icon is hidden */
+@media (min-width: 636px) {
+    nav .menu-icon {
+        display: none; /* Hide menu icon */
+    }
+}
 @media only screen and (max-width: 1576px) {
     .projects img{
         max-height: 300px;
@@ -234,6 +266,7 @@ h1:hover > .magic-text {
 @media only screen and (max-width: 976px) {
     .projects h3{
         font-size: 40px;
+        margin-top: 300px;
     }
 }
 @media only screen and (max-width: 776px) {
@@ -253,6 +286,22 @@ h1:hover > .magic-text {
         font-size: 32px;
     }
     .magic-text{
+        animation: background-pan 3s linear infinite;
+        background: linear-gradient(
+        to right,
+        var(--blue),
+        var(--green),
+        var(--yellow),
+        var(--blue)
+        );
+        background-size: 200%;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        white-space: nowrap;
+        cursor: default;
+        font-size: 40px;
+    }
+    h1:hover > .magic-text {
         font-size: 40px;
     }
     .projects{
@@ -292,13 +341,13 @@ h1:hover > .magic-text {
         font-size: 32px;
     }
     h1:hover > .magic-text {
-        font-size: 36px;
+        font-size: 32px;
     }
     p{
         font-size: 20px;
     }
 }
-@media only screen and (max-width: 430px) {
+@media only screen and (max-width: 467px) {
     h1{
         font-size: 28px;
     }
@@ -311,19 +360,19 @@ h1:hover > .magic-text {
 }
 @media only screen and (max-width: 376px) {
     h1{
-        font-size: 24px;
+        font-size: 20px;
     }
     .magic-text{
-        font-size: 24px;
+        font-size: 20px;
     }
     h1:hover > .magic-text {
-        font-size: 28px;
+        font-size: 20px;
     }
     h2{
-        font-size: 28px;
+        font-size: 24px;
     }
     .projects h3{
-        font-size: 24px;
+        font-size: 20px;
     }
     p{
         font-size: 16px;
