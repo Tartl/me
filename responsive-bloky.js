@@ -27,5 +27,6 @@ function calc(){
             break;
         }
     }
-        alert(result);
+    console.log(result);
+    document.getElementById("result").textContent = result;
 }

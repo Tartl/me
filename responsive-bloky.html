@@ -52,17 +52,20 @@
             <div class="container">
                 <form id="calculator">
                     <label for="number1">Číslo 1</label>
-                    <input type="text" id="number1" name="number1">
+                    <input required type="text" id="number1" name="number1">
                     <label for="number2">Číslo 2</label>
-                    <input type="text" id="number2" name="number2">
+                    <input required type="text" id="number2" name="number2">
                     <select id="operand" form="calculator">
                         <option value="+">+</option>
                         <option value="-">-</option>
                         <option value="*">*</option>
                         <option value="/">/</option>
                     </select>
-                    <button onclick="calc()">Vypočítej</button>
+                    <button type="button" onclick="calc()">Vypočítej</button>
+                    <label>Vysledek:</label>
+                    <span id="result"></span>
                 </form>
+                
             </div>
         </div>
     </body>
