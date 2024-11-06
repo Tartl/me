@@ -11,10 +11,10 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Anton&family=Permanent+Marker&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="responsive-bloky.css">
+        <script src="responsive-bloky.js"></script>
     </head>
     <body>
         <div class="navbar">
-
             <div class="container">
                 <div class ="menu">
                     <svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" fill="none">
@@ -46,6 +46,23 @@
                 </div>
                 <div class="ctverec"> 
                 </div>  
+            </div>
+        </div>
+        <div class="calc-form">
+            <div class="container">
+                <form id="calculator">
+                    <label for="number1">Číslo 1</label>
+                    <input type="text" id="number1" name="number1">
+                    <label for="number2">Číslo 2</label>
+                    <input type="text" id="number2" name="number2">
+                    <select id="operand" form="calculator">
+                        <option value="+">+</option>
+                        <option value="-">-</option>
+                        <option value="*">*</option>
+                        <option value="/">/</option>
+                    </select>
+                    <button onclick="calc()">Vypočítej</button>
+                </form>
             </div>
         </div>
     </body>
