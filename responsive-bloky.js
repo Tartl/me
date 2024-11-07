@@ -3,6 +3,7 @@ function calc(){
     var number2 = parseInt(document.getElementById("number2").value);
     var operand = document.getElementById("operand").value;
     var result = 0;
+    var divideByzero = false;
     switch (operand) {
         case "+":
         {
@@ -23,10 +24,17 @@ function calc(){
         {
             if(number2 != 0)
                 result = number1 / number2;
-            else console.log("Dividing by zero!");
+            else divideByzero = true
             break;
         }
     }
-    console.log(result);
+    if (divideByzero) {
+        console.log(result);
+        document.getElementById("result").textContent = "Došlo k dělení nulou";
+    }
+    else{
+            console.log(result);
     document.getElementById("result").textContent = result;
+    }
+
 }
