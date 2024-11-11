@@ -44,7 +44,9 @@ nav .nav-links a {
     padding-left: 35px;
     font-weight: normal;
 }
-
+nav .menu-icon {
+    display: none; 
+}
 .menu-icon{
     background: none;
     border: none;
@@ -277,21 +279,6 @@ h1:hover > .magic-text {
 
     transition: 1s;
 }
-@media (max-width: 767px) {
-    nav .nav-links {
-        display: none; 
-    }
-    
-    nav .menu-icon {
-        display: block; 
-    }
-}
-
-@media (min-width: 768px) {
-    nav .menu-icon {
-        display: none; 
-    }
-}
 @media only screen and (max-width: 1439px) {
     .projects img{
         max-height: 300px;
@@ -365,6 +352,13 @@ h1:hover > .magic-text {
     }
     nav a{
         padding-left: 25px;
+    }
+    nav .nav-links {
+        display: none; 
+    }
+    
+    nav .menu-icon {
+        display: block; 
     }
     .navbar{
         padding: 12px 0;

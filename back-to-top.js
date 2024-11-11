@@ -1,8 +1,6 @@
 let backToTopVisible = false;
 let isAnimating = false; 
-var tlacitko = document.querySelector(".menu-icon");
-var menu = document.querySelector(".menu");
-var krizek = document.querySelector(".x-icon");
+
 window.addEventListener('scroll', function() {
     const backToTopButton = document.querySelector('.back-to-top');
     
@@ -27,11 +25,5 @@ window.addEventListener('scroll', function() {
     }
 });
 
-tlacitko.addEventListener("click", function(){
-    menu.classList.toggle("menu--open");
-})
 
-krizek.addEventListener("click", function(){
-    menu.classList.toggle("menu--open");
-})
 
