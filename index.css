@@ -235,7 +235,7 @@ h2{
     font-size: 48px;
     font-weight: bold;
     letter-spacing: 2px;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
 }
 
 .projects-text{
@@ -277,36 +277,86 @@ h1:hover > .magic-text {
 
     transition: 1s;
 }
-@media (max-width: 635px) {
+@media (max-width: 767px) {
     nav .nav-links {
-        display: none; /* Hide links */
+        display: none; 
     }
     
     nav .menu-icon {
-        display: block; /* Show menu icon */
+        display: block; 
     }
 }
 
-/* For larger screens, ensure the menu icon is hidden */
-@media (min-width: 636px) {
+@media (min-width: 768px) {
     nav .menu-icon {
-        display: none; /* Hide menu icon */
+        display: none; 
     }
 }
 @media only screen and (max-width: 1439px) {
     .projects img{
         max-height: 300px;
     }
+    h1{
+        font-size: 56px;
+    }
+    .magic-text{
+        font-size: 56px;
+    }
+    h1:hover > .magic-text {
+        font-size: 68px;
+    }
 }
 @media only screen and (max-width: 1279px) {
     .projects img{
         max-height: 200px;
     }
+    h1{
+        font-size: 52px;
+    }
+    .magic-text{
+        font-size: 52px;
+    }
+    h1:hover > .magic-text {
+        font-size: 64px;
+    }
 }
 @media only screen and (max-width: 1023px) {
     .projects h3{
         font-size: 40px;
-        margin-top: 300px;
+    }
+    .projects{
+        display: inline;
+        margin: 200px 0;
+        text-align: center;
+        align-items: center;
+    }
+    .projects img{
+        object-fit: scale-down;
+        margin-bottom: 80px;
+    }
+    .projects-text{  
+        display:inline;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    .projects p{
+        margin-bottom: 40px;
+    }
+    .projects:nth-child(odd)
+    {
+        text-align: center;
+    }
+    h1{
+        font-size: 48px;
+    }
+    h2{
+        margin-bottom: 20px;
+    }
+    .magic-text{
+        font-size: 48px;
+    }
+    h1:hover > .magic-text {
+        font-size: 60px;
     }
 }
 @media only screen and (max-width: 767px) {
@@ -315,6 +365,9 @@ h1:hover > .magic-text {
     }
     nav a{
         padding-left: 25px;
+    }
+    .navbar{
+        padding: 12px 0;
     }
     h1{
         font-size: 40px;
@@ -344,33 +397,11 @@ h1:hover > .magic-text {
     h1:hover > .magic-text {
         font-size: 40px;
     }
-    .projects{
-        display: inline;
-        margin: 200px 0;
-        text-align: center;
-        align-items: center;
-    }
-    .projects img{
-        object-fit: scale-down;
-    }
-    .projects-text{  
-        display:inline;
-        align-items: center;
-        justify-content: flex-start;
-        margin: 300px 0;
-    }
-    .projects:nth-child(odd)
-    {
-        text-align: center;
+    section{
+        margin: 250px 0;
     }
 }
 @media only screen and (max-width: 575px) {
-    .projects-text{  
-        display:inline;
-        align-items: center;
-        justify-content: flex-start;
-        margin: 300px 0;
-    }
     nav a{
         display: none;
     }
@@ -389,13 +420,16 @@ h1:hover > .magic-text {
 }
 @media only screen and (max-width: 424px) {
     h1{
-        font-size: 28px;
+        font-size: 24px;
     }
     .magic-text{
-        font-size: 28px;
+        font-size: 24px;
     }
     h1:hover > .magic-text {
-        font-size: 28px;
+        font-size: 24px;
+    }
+    p{
+        font-size: 16px;
     }
 }
 @media only screen and (max-width: 374px) {
@@ -412,10 +446,10 @@ h1:hover > .magic-text {
         font-size: 24px;
     }
     .projects h3{
-        font-size: 20px;
+        font-size: 24px;
     }
     p{
-        font-size: 16px;
+        font-size: 12px;
     }
 }
 
