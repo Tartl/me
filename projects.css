@@ -100,70 +100,6 @@ svg{
     font-size: 20px;
 }
 
-
-@keyframes fade-left{
-    0%{
-        opacity: 0;
-        transform: translateX(200px) scale(.9);
-    }
-    100%{
-        opacity: 1;
-        transform: translateX(0px) scale(1);
-    }
-}
-@keyframes fade-right{
-    0%{
-        opacity: 0;
-        transform: translateX(-200px) scale(.9);
-    }
-    100%{
-        opacity: 1;
-        transform: translateX(0px) scale(1);
-    }
-}
-
-@keyframes background-pan {
-    from {
-      background-position: 0% center;
-    }
-    
-    to {
-      background-position: 200% center;
-    }
-  }
-.back-to-top{
-    height: 50px;
-    width: 50px;
-    background-color: rgb(80, 71, 64);  
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    padding: 5px;
-    border-radius: 50%;   
-    z-index: 98;
-    opacity: 0; 
-
-    transition: opacity .3s ease-in-out;
-
-    transition: .5s;
-}
-.back-to-top svg {
-    width: 50px;
-    height: auto; 
-    color: white; 
-
-    transition: .5s;
-}
-.back-to-top:hover {
-    background-color: rgb(65, 53, 43);
-}
-h1 {
-    color: white;
-    font-size: 48px;
-    font-weight: 800;
-
-}
-
 a{
     color: white;
     text-decoration: none;
@@ -180,36 +116,81 @@ header{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2));
+    background: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url("./projekty.jpg") no-repeat center;
     background-size: cover;
     background-attachment: fixed;
+    padding-left: 30px;
 }
-header h1{
-    animation: fade-left 2s;
-}
-header p{
-    opacity: 0;
-    animation-name: fade-right;
-    animation-duration: 1.6s;
-    animation-delay:0.4s;
-    animation-fill-mode: forwards;
-}
-main{
-    margin:0 auto;
-}
+
 section{
     margin: 400px 0;
 }
+
+h1{
+    font-size: 80px;
+}
+
 h2{
     font-size: 60px;
+}
+.about h2{
+    text-align: right;
+}
+.projects a{
+    color: rgb(97, 87, 78);  
+}
+.projects a:hover{
+    color: var(--secondary);
+}
+.projects{
+    display: flex;
+    justify-content:space-between;
+    margin: 200px 0;
+    text-align: left;
+}
+
+.projects:nth-child(odd){
+    flex-direction: row-reverse;
+    text-align: right;
+}
+
+.projects img{  
+    flex: 1;
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+    object-fit: cover;
+
+    transition: .5s;
+}
+
+.projects img:hover{
+    transform: scale(110%);
+}
+
+.projects h3{
+    font-size: 48px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+.projects-text{
+    display: block;
+    max-width: 40%;
+}
+
+.projects-text p{
+    color: rgb(97, 87, 78);  
 }
 
 footer{
     position: fixed;
-    right: 20px;
+    left: 20px;
     bottom: 20px;
     font-size: 20px;
 }
+
 
 @media (max-width: 635px) {
     nav .nav-links {
@@ -352,6 +333,3 @@ footer{
         font-size: 16px;
     }
 }
-
-
- 

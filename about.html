@@ -10,13 +10,34 @@
     <div class="navbar">
         <div class="container">
             <nav>
-                <a href="./index.html">Domů</a>
-                <a href="./about.html">O mně</a>
-                <a href="./projects.html">Projekty</a>
-                <a href="./contact.html">Kontakt</a>
-                <a href="./priklady.html">Příklady</a>
-                <a class="en" href="./en/index.html">EN</a>
+                <button type="button" class="menu-icon" >
+                    <svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" fill="none">
+                        <path fill="currentColor" fill-rule="evenodd" d="M19 4a1 1 0 01-1 1H2a1 1 0 010-2h16a1 1 0 011 1zm0 6a1 1 0 01-1 1H2a1 1 0 110-2h16a1 1 0 011 1zm-1 7a1 1 0 100-2H2a1 1 0 100 2h16z"/>
+                      </svg>
+                </button>
+                <div class="nav-links">
+                    <a href="./index.html">Domů</a>
+                    <a href="./about.html">O mně</a>
+                    <a href="./projects.html">Projekty</a>
+                    <a href="./contact.html">Kontakt</a>
+                    <a href="./priklady.html">Příklady</a>
+                    <a class="en" href="./en/index.html">EN</a>
+                </div>
             </nav>
+        </div>
+    </div>
+    <div class="menu">
+        <button type="button" class="x-icon">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none">
+                <path fill="#FFFFFF" d="M18.3 5.7a1 1 0 00-1.4 0L12 10.6 7.1 5.7a1 1 0 10-1.4 1.4l4.9 4.9-4.9 4.9a1 1 0 101.4 1.4l4.9-4.9 4.9 4.9a1 1 0 001.4-1.4L13.4 12l4.9-4.9a1 1 0 000-1.4z"/>
+            </svg>
+        </button>
+        <div class="menu-text">
+            <a href="./index.html">Domů</a>
+            <a href="./about.html">O mně</a>
+            <a href="./projects.html">Projekty</a>
+            <a href="./contact.html">Kontakt</a>
+            <a href="./priklady.html">Příklady</a>
         </div>
     </div>
     
@@ -24,44 +45,50 @@
         <h1>Více o mně</h1>
     </header>
     <main>
-        <div class="about">
-            <h2>Studium</h2>
-            <p>Studoval jsem 5 let na ZŠ Kpt. Jaroše, odkud jsem na 2.stupeň přešel na Gymnázium Třebíč. 
-            Teď studuji 4.ročník oboru IT na SPŠT, kde získávám obecné znalosti z mnoha odvětví IT. 
-            Osobně mě zajímá především vývoj her, ale taky mě baví frontend vývoje webových stránek a zajímám se i o kyberbezpečnost a počítačové sítě.
-            Dále mám v plánu jít studovat na Masarykovu univerzitu, přesněji na Fakultu Informatiky se zaměřením na Vývoj softwarových aplikací.
-            </p>
-        </div>
-        <div class="about">
-            <h2>Sporty</h2>
-            <p>Už od svých 5 let jsem byl sportovně aktivní. Hrál jsem fotbal za HFK Třebíč a zároveň se účastnil kroužků kopané a florbalu ve škole. 
-                Později mě začalo bavit také cvičení a bojové sporty. Teď navštěvuji tréninky Taekwon-do Třebíč a taky rád doma cvičím. 
-                Taky si občas v tělesné výchově ve škole zahraju různé míčové hry, převážně však fotbal.
-            </p>
-        </div>
-        <div class="about">
-            <h2>Technika</h2>
-            <p>Ještě dřív, než jsem začal hrát fotbal jsem trávil svůj čas hraním her nebo sledováním mého táty jak hraje na svém počítači různé hry. 
-                Nejvíce času jsem strávil hraním herní série Counter-Strike, na druhém místě se pak nachází Minecraft.
-                Moje nejoblíbenější single player hry jsou všechny herní tituly od společnosti Valve, ale užívám si samozřejmě i jiné různé hry.
-                Nejen kvůli hrám mě už od malička zajímalo, jak počítače fungují a díky rodinným LANPárty jsem chtěl umět vše kolem počítačových sítí,
-                což napomohlo k mé cestě na obor Informačních technologií. Asi před rokem nám také domů přibila 3D tískárna, za kterou jsem se stal zodpovědným a se kterou se snažím více spřátelit.
-                Stále mě baví všechno kolem technologií, her, sítí nebo i VR, které si stále přeji vlastnit.
-            </p>
-        </div>
-        <div class="about">
-            <h2>Cestování</h2>
-            <p>Za svůj život jsem byl na mnoho dovolených: Chorvatsko, Itálie, Řecko, Černá Hora, Rakouské Alpy nebo Tatry na Slovensku. 
-                V posledním roce jsem taky navštívil se školou na týden Anglii a v rámci programu Erasmus+ jsem strávil 2 týdny ve Finsku v Tampere.
-                V Tampere jsme navštěvovali zdejší technickou školu a samozřejmě jsme zavítali i do místní sauny a mimo jiné šli taky na rozhlednu nebo do kina.
-                Také jsem se podíval nedávno v rámci YSA Konference do Rumunska do města Bran. Vícekrát do roka jezdím do Německa do Freibergu. 
-            </p>
+        <div class="container">
+            <div class="about">
+                <h2>Studium</h2>
+                <p>Studoval jsem 5 let na ZŠ Kpt. Jaroše, odkud jsem na 2.stupeň přešel na Gymnázium Třebíč. 
+                Teď studuji 4.ročník oboru IT na SPŠT, kde získávám obecné znalosti z mnoha odvětví IT. 
+                Osobně mě zajímá především vývoj her, ale taky mě baví frontend vývoje webových stránek a zajímám se i o kyberbezpečnost a počítačové sítě.
+                Dále mám v plánu jít studovat na Masarykovu univerzitu, přesněji na Fakultu Informatiky se zaměřením na Vývoj softwarových aplikací.
+                </p>
+            </div>
+            <div class="about">
+                <h2>Sporty</h2>
+                <p>Už od svých 5 let jsem byl sportovně aktivní. Hrál jsem fotbal za HFK Třebíč a zároveň se účastnil kroužků kopané a florbalu ve škole. 
+                    Později mě začalo bavit také cvičení a bojové sporty. Teď navštěvuji tréninky Taekwon-do Třebíč a taky rád doma cvičím. 
+                    Taky si občas v tělesné výchově ve škole zahraju různé míčové hry, převážně však fotbal.
+                </p>
+            </div>
+            <div class="about">
+                <h2>Technika</h2>
+                <p>Ještě dřív, než jsem začal hrát fotbal jsem trávil svůj čas hraním her nebo sledováním mého táty jak hraje na svém počítači různé hry. 
+                    Nejvíce času jsem strávil hraním herní série Counter-Strike, na druhém místě se pak nachází Minecraft.
+                    Moje nejoblíbenější single player hry jsou všechny herní tituly od společnosti Valve, ale užívám si samozřejmě i jiné různé hry.
+                    Nejen kvůli hrám mě už od malička zajímalo, jak počítače fungují a díky rodinným LANPárty jsem chtěl umět vše kolem počítačových sítí,
+                    což napomohlo k mé cestě na obor Informačních technologií. Asi před rokem nám také domů přibila 3D tískárna, za kterou jsem se stal zodpovědným a se kterou se snažím více spřátelit.
+                    Stále mě baví všechno kolem technologií, her, sítí nebo i VR, které si stále přeji vlastnit.
+                </p>
+            </div>
+            <div class="about">
+                <h2>Cestování</h2>
+                <p>Za svůj život jsem byl na mnoho dovolených: Chorvatsko, Itálie, Řecko, Černá Hora, Rakouské Alpy nebo Tatry na Slovensku. 
+                    V posledním roce jsem taky navštívil se školou na týden Anglii a v rámci programu Erasmus+ jsem strávil 2 týdny ve Finsku v Tampere.
+                    V Tampere jsme navštěvovali zdejší technickou školu a samozřejmě jsme zavítali i do místní sauny a mimo jiné šli taky na rozhlednu nebo do kina.
+                    Také jsem se podíval nedávno v rámci YSA Konference do Rumunska do města Bran. Vícekrát do roka jezdím do Německa do Freibergu. 
+                </p>
+            </div>
         </div>
     </main>
     
     <footer>
-        <p>Kontakt:</p>
-        <a href="mailto:fejtaj.06@spst.eu">fejtaj.06@spst.eu</a>
+        <p>email: <a href="mailto:fejtaj.06@spst.eu">fejtaj.06@spst.eu</a></p>
     </footer>
+    <a href="#top" class="back-to-top">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="18 15 12 9 6 15" />
+        </svg>
+    </a>
 </body>
 </html>

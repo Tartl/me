@@ -4,19 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-    <link rel="stylesheet" type="text/css" href="./projekty.css">
+    <link rel="stylesheet" type="text/css" href="./projects.css">
 </head>
 <body>
     <div class="navbar">
         <div class="container">
             <nav>
-                <a href="./index.html">Domů</a>
-                <a href="./about.html">O mně</a>
-                <a href="./projects.html">Projekty</a>
-                <a href="./contact.html">Kontakt</a>
-                <a href="./priklady.html">Příklady</a>
-                <a class="en" href="./en/index.html">EN</a>
+                <button type="button" class="menu-icon" >
+                    <svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" fill="none">
+                        <path fill="currentColor" fill-rule="evenodd" d="M19 4a1 1 0 01-1 1H2a1 1 0 010-2h16a1 1 0 011 1zm0 6a1 1 0 01-1 1H2a1 1 0 110-2h16a1 1 0 011 1zm-1 7a1 1 0 100-2H2a1 1 0 100 2h16z"/>
+                      </svg>
+                </button>
+                <div class="nav-links">
+                    <a href="./index.html">Domů</a>
+                    <a href="./about.html">O mně</a>
+                    <a href="./projects.html">Projekty</a>
+                    <a href="./contact.html">Kontakt</a>
+                    <a href="./priklady.html">Příklady</a>
+                    <a class="en" href="./en/index.html">EN</a>
+                </div>
             </nav>
+        </div>
+    </div>
+    <div class="menu">
+        <button type="button" class="x-icon">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none">
+                <path fill="#FFFFFF" d="M18.3 5.7a1 1 0 00-1.4 0L12 10.6 7.1 5.7a1 1 0 10-1.4 1.4l4.9 4.9-4.9 4.9a1 1 0 101.4 1.4l4.9-4.9 4.9 4.9a1 1 0 001.4-1.4L13.4 12l4.9-4.9a1 1 0 000-1.4z"/>
+            </svg>
+        </button>
+        <div class="menu-text">
+            <a href="./index.html">Domů</a>
+            <a href="./about.html">O mně</a>
+            <a href="./projects.html">Projekty</a>
+            <a href="./contact.html">Kontakt</a>
+            <a href="./priklady.html">Příklady</a>
         </div>
     </div>
     <header>
@@ -28,29 +49,39 @@
             <div class="projects">
                 <div class="projects-text">
                     <h3>HeroIn Studio</h3>
-                    <p>Herní studio určeno pro vývoj 2D her</p>
+                    <p>Herní studio určeno pro vývoj 2D her: <br>
+                        Jedná se o studio, které jsme s dalšími dvěma spolužáky - Jakubem Černým a Nicolasem Spilkou - vytvořili
+                        v rámci předmětu RPR (Řízení projektů).
+                    </p>
                 </div>
                 <a href="https://prvni.jednoduse.cz/heroinstudio/index.html" target="_blank" ><img src="./heroinstudio.png" alt="Screenshot mé platformové hry"></a>
             </div>
             <div class="projects">
                 <div class="projects-text">
                     <h3>FungiCombat</h3>
-                    <p>Hra vytvořena v rámci Spring Game Jam @ Matfyz 2024</p>
+                    <p>Hra vytvořena v rámci Spring Game Jam @ Matfyz 2024:<br>
+                        Game Jam trval 48 hodin a byl na téma Fungipunk ve spolupráci 
+                        s českým herním studiem <a href="https://amanita-design.net" target="_blank">Amanita</a> design.
+                    </p>
                 </div>
                 <a href="https://tartl.itch.io/fungicombat" target="_blank" ><img src="./Fungicombat.png" alt="Screenshot úvodního menu hry"></a>
             </div>
             <div class="projects">
                 <div class="projects-text">
                     <h3>Coming soon (XO)</h3>
-                    <p>Neustále dělám na nových projektech</p>
+                    <p>Neustále dělám na nových projektech, <br> momentálně tvořím platformu pro hraní Piškvorek</p>
                 </div>
                 <a href="https://github.com/Tartl/PiskvorkyROP.git" target="_blank" ><img src="./placeholder.jpg" alt="Coming soon"></a>
             </div>
         </div>
     </main>
     <footer>
-        <p>Kontakt:</p>
-        <a href="mailto:fejtaj.06@spst.eu">fejtaj.06@spst.eu</a>
+        <p>email: <a href="mailto:fejtaj.06@spst.eu">fejtaj.06@spst.eu</a></p>
     </footer>
+    <a href="#top" class="back-to-top">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="18 15 12 9 6 15" />
+        </svg>
+    </a>
 </body>
 </html>
