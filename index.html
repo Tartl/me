@@ -5,19 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" type="text/css" href="./index.css">
-    <script src="index.js"></script>
 </head>
 <body>
     <div class="navbar">
         <div class="container">
             <nav>
-                <a href="#" class="menu-icon" aria-label="Open Menu">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
-                        <rect width="30" height="4" fill="white"/>
-                        <rect y="13" width="30" height="4" fill="white"/>
-                        <rect y="26" width="30" height="4" fill="white"/>
-                    </svg>
-                </a>
+                <button type="button" class="menu-icon" >
+                    <svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" fill="none">
+                        <path fill="currentColor" fill-rule="evenodd" d="M19 4a1 1 0 01-1 1H2a1 1 0 010-2h16a1 1 0 011 1zm0 6a1 1 0 01-1 1H2a1 1 0 110-2h16a1 1 0 011 1zm-1 7a1 1 0 100-2H2a1 1 0 100 2h16z"/>
+                      </svg>
+                </button>
                 <div class="nav-links">
                     <a href="./index.html">Domů</a>
                     <a href="./about.html">O mně</a>
@@ -27,17 +24,22 @@
                     <a class="en" href="./en/index.html">EN</a>
                 </div>
             </nav>
-            <div class="dropdown-menu">
-                <a href="./index.html">Domů</a>
-                <a href="./about.html">O mně</a>
-                <a href="./projects.html">Projekty</a>
-                <a href="./contact.html">Kontakt</a>
-                <a href="./priklady.html">Příklady</a>
-                <a class="en" href="./en/index.html">EN</a>
-            </div>
         </div>
     </div>
-
+    <div class="menu">
+        <button type="button" class="x-icon">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none">
+                <path fill="#FFFFFF" d="M18.3 5.7a1 1 0 00-1.4 0L12 10.6 7.1 5.7a1 1 0 10-1.4 1.4l4.9 4.9-4.9 4.9a1 1 0 101.4 1.4l4.9-4.9 4.9 4.9a1 1 0 001.4-1.4L13.4 12l4.9-4.9a1 1 0 000-1.4z"/>
+            </svg>
+        </button>
+        <div class="menu-text">
+            <a href="./index.html">Domů</a>
+            <a href="./about.html">O mně</a>
+            <a href="./projects.html">Projekty</a>
+            <a href="./contact.html">Kontakt</a>
+            <a href="./priklady.html">Příklady</a>
+        </div>
+    </div>
     <header id="top">
     
         <h1>
@@ -95,3 +97,4 @@
     </a>
 </body>
 </html>
+<script src="index.js"></script>

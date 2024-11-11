@@ -1,8 +1,8 @@
 let backToTopVisible = false;
 let isAnimating = false; 
-const menuIcon = document.querySelector('.menu-icon');
-const dropdownMenu = document.querySelector('.dropdown-menu');
-
+var tlacitko = document.querySelector(".menu-icon");
+var menu = document.querySelector(".menu");
+var krizek = document.querySelector(".x-icon");
 window.addEventListener('scroll', function() {
     const backToTopButton = document.querySelector('.back-to-top');
     
@@ -27,6 +27,11 @@ window.addEventListener('scroll', function() {
     }
 });
 
-menuIcon.addEventListener('click', function() {
-    dropdownMenu.classList.toggle('active');
-});
+tlacitko.addEventListener("click", function(){
+    menu.classList.toggle("menu--open");
+})
+
+krizek.addEventListener("click", function(){
+    menu.classList.toggle("menu--open");
+})
+

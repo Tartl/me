@@ -73,7 +73,6 @@ h2{
 }
 .projects{
     display: flex;
-    align-items: center; 
     justify-content:space-between;
     margin: 200px 0;
     text-align: left;
@@ -95,7 +94,7 @@ h2{
 }
 
 .projects img:hover{
-    filter: drop-shadow(0px 0px 15px #FFFFFF);
+    transform: scale(110%);
 }
 
 .projects h3{
@@ -107,7 +106,11 @@ h2{
 
 .projects-text{
     display: block;
-    max-width: 500px;
+    max-width: 40%;
+}
+
+.projects-text p{
+    color: rgb(97, 87, 78);  
 }
 
 footer{
