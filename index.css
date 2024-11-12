@@ -156,10 +156,9 @@ nav .menu-icon {
     border-radius: 50%;   
     z-index: 98;
     opacity: 0; 
+    display: none;
 
     transition: opacity .3s ease-in-out;
-
-    transition: .5s;
 }
 .back-to-top svg {
     width: 50px;
