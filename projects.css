@@ -100,6 +100,7 @@ svg{
 
 .en{
     font-size: 20px;
+    display: none;
 }
 
 a{
@@ -259,6 +260,9 @@ footer{
     }
     nav a{
         padding-left: 25px;
+    }
+    .navbar{
+        padding: 12px 0;
     }
     h1{
         font-size: 40px;

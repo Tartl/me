@@ -100,6 +100,7 @@ svg{
 
 .en{
     font-size: 20px;
+    display: none;
 }
 
 
@@ -213,39 +214,22 @@ footer{
     font-size: 20px;
 }
 
-@media (max-width: 635px) {
-    nav .nav-links {
-        display: none; /* Hide links */
-    }
-    
-    nav .menu-icon {
-        display: block; /* Show menu icon */
-    }
-}
-
-/* For larger screens, ensure the menu icon is hidden */
-@media (min-width: 636px) {
-    nav .menu-icon {
-        display: none; /* Hide menu icon */
-    }
-}
 @media only screen and (max-width: 1439px) {
-    .projects img{
-        max-height: 300px;
-    }
 }
 @media only screen and (max-width: 1279px) {
-    .projects img{
-        max-height: 200px;
-    }
 }
 @media only screen and (max-width: 1023px) {
-    .projects h3{
-        font-size: 40px;
-        margin-top: 300px;
-    }
 }
 @media only screen and (max-width: 767px) {
+    nav .nav-links {
+        display: none; 
+    }
+    .navbar{
+        padding: 12px 0;
+    }
+    nav .menu-icon {
+        display: block; 
+    }
     nav{
         font-size: 20px;
     }
@@ -258,55 +242,11 @@ footer{
     h2{
         font-size: 40px;
     }
-    .projects h3{
-        font-size: 32px;
-    }
-    .magic-text{
-        animation: background-pan 3s linear infinite;
-        background: linear-gradient(
-        to right,
-        var(--blue),
-        var(--green),
-        var(--yellow),
-        var(--blue)
-        );
-        background-size: 200%;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        white-space: nowrap;
-        cursor: default;
-        font-size: 40px;
-    }
     h1:hover > .magic-text {
         font-size: 40px;
     }
-    .projects{
-        display: inline;
-        margin: 200px 0;
-        text-align: center;
-        align-items: center;
-    }
-    .projects img{
-        object-fit: scale-down;
-    }
-    .projects-text{  
-        display:inline;
-        align-items: center;
-        justify-content: flex-start;
-        margin: 300px 0;
-    }
-    .projects:nth-child(odd)
-    {
-        text-align: center;
-    }
 }
 @media only screen and (max-width: 575px) {
-    .projects-text{  
-        display:inline;
-        align-items: center;
-        justify-content: flex-start;
-        margin: 300px 0;
-    }
     nav a{
         display: none;
     }
@@ -347,13 +287,9 @@ footer{
     h2{
         font-size: 24px;
     }
-    .projects h3{
-        font-size: 20px;
-    }
     p{
         font-size: 16px;
     }
 }
-
 
  

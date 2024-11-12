@@ -35,7 +35,14 @@ body{
     width: 80%;
     margin: auto;
 }
-
+.socials{
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+}
+.socials svg{
+    padding: 0 5px;
+}
 nav{
     font-size: 24px;
     text-align: right;
@@ -51,7 +58,7 @@ nav .menu-icon {
     background: none;
     border: none;
 }
-svg{
+.menu-icon svg{
     width: 50px;
     height: auto;
     color: white;
@@ -61,6 +68,11 @@ svg{
     margin-top: 20px;
     background: none;
     border: none;
+}
+.x-icon svg{
+    width: 50px;
+    height: auto;
+    color: white;
 }
 .menu-icon:hover{
     cursor: pointer;
@@ -100,6 +112,7 @@ svg{
 
 .en{
     font-size: 20px;
+    display: none;
 }
 
 @keyframes fade-left{

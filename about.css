@@ -100,6 +100,7 @@ svg{
 
 .en{
     font-size: 20px;
+    display: none;
 }
 
 a{
@@ -189,8 +190,25 @@ footer{
     bottom: 20px;
     font-size: 20px;
 }
-
-@media (max-width: 635px) {
+@media only screen and (max-width: 1439px) {
+    h1{
+        font-size: 56px;
+    }
+}
+@media only screen and (max-width: 1279px) {
+    h1{
+        font-size: 52px;
+    }
+}
+@media only screen and (max-width: 1023px) {
+    h1{
+        font-size: 48px;
+    }
+    h2{
+        margin-bottom: 20px;
+    }
+}
+@media only screen and (max-width: 767px) {
     nav .nav-links {
         display: none; 
     }
@@ -198,31 +216,17 @@ footer{
     nav .menu-icon {
         display: block; 
     }
-}
-
-@media (min-width: 636px) {
-    nav .menu-icon {
-        display: none; 
-    }
-}
-@media only screen and (max-width: 1439px) {
-
-}
-@media only screen and (max-width: 1279px) {
-
-}
-@media only screen and (max-width: 1023px) {
-
-}
-@media only screen and (max-width: 767px) {
     nav{
         font-size: 20px;
+    }
+    .navbar{
+        padding: 12px 0;
     }
     nav a{
         padding-left: 25px;
     }
     h1{
-        font-size: 40px;
+        font-size: 48px;
     }
     h2{
         font-size: 40px;
