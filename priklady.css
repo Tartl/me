@@ -162,7 +162,7 @@ svg{
 }
 h1 {
     color: white;
-    font-size: 48px;
+    font-size: 80px;
     font-weight: 800;
 
 }
@@ -191,6 +191,7 @@ header h1{
     animation: fade-left 2s;
 }
 header p{
+    font-size: 32px;
     opacity: 0;
     animation-name: fade-right;
     animation-duration: 1.6s;
@@ -206,7 +207,10 @@ section{
 h2{
     font-size: 60px;
 }
-
+.links{
+    margin: 20px 0;
+    margin-left: 50px;
+}
 footer{
     position: fixed;
     right: 20px;

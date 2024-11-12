@@ -10,6 +10,36 @@
     --primary:rgb(32, 27, 22);
     --secondary:rgb(13, 110, 26);  
 }
+@keyframes fade-left{
+    0%{
+        opacity: 0;
+        transform: translateX(200px) scale(.9);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0px) scale(1);
+    }
+}
+@keyframes fade-right{
+    0%{
+        opacity: 0;
+        transform: translateX(-200px) scale(.9);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0px) scale(1);
+    }
+}
+@keyframes fade-down{
+    0%{
+        opacity: 0;
+        transform: translateY(-200px) scale(.9);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px) scale(1);
+    }
+}
 html{
     scroll-behavior: smooth;
 }
@@ -45,9 +75,15 @@ header{
     background-attachment: fixed;
     position: relative;
 }
+header h1{
+    animation: fade-down 2s;
+}
+
 .button-download{
-    background-color: var(--secondary);
-    border: none;
+    background: none;
+    border: solid 3px rgb(65, 53, 43);
+    box-shadow: 0px 0px 10px 5px rgb(24, 20, 16);
+    margin: 50px auto;
     padding: 30px 50px;
     color: white;
     transition: .3s;
@@ -64,8 +100,8 @@ header{
 
 .button-download:hover{
     cursor: pointer;
-    background-color: rgba(13,110,26, 0.8);
-    box-shadow: 10px 10px 5px rgba(50, 255, 9, 0.2);
+
+    box-shadow: 0px 0px 10px 5px rgba(65, 53, 43, 0.507);
 }
 nav{
     font-size: 24px;
@@ -182,13 +218,25 @@ h2{
     margin-bottom: 40px;
 }
 .about{
-    margin: 200px 0;
+    margin: 500px 0;
+    opacity: 0;
     text-align: right;
+}
+.about--onscreen{
+    animation-duration: 1.6s;
+    animation-delay:0.4s;
+    animation-fill-mode: forwards;
 }
 
 .about:nth-child(odd){
     flex-direction: row-reverse;
     text-align: left;
+}
+.about--onscreen:nth-child(odd){
+    animation-name: fade-right;
+}
+.about--onscreen:nth-child(even){
+    animation-name: fade-left;
 }
 
 .about h3{
@@ -251,6 +299,9 @@ footer{
     }
     h2{
         font-size: 40px;
+    }
+    .about{
+        margin: 200px 0;
     }
 }
 @media only screen and (max-width: 575px) {

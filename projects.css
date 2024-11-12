@@ -2,7 +2,16 @@
     margin: 0;
     padding: 0;
 }
-
+@keyframes fade-down{
+    0%{
+        opacity: 0;
+        transform: translateY(-200px) scale(.9);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px) scale(1);
+    }
+}
 :root {  
     --blue: rgb(6, 145, 187);
     --green: rgb(24, 185, 45);
@@ -124,6 +133,9 @@ header{
     background-attachment: fixed;
     padding-left: 30px;
 }
+header h1{
+    animation: fade-down 2s;
+}
 
 .back-to-top{
     height: 50px;
@@ -161,7 +173,10 @@ h1{
 }
 
 h2{
-    font-size: 60px;
+    font-size: 48px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
 }
 .about h2{
     text-align: right;
@@ -175,7 +190,7 @@ h2{
 .projects{
     display: flex;
     justify-content:space-between;
-    margin: 200px 0;
+    margin: 500px 0;
     text-align: left;
 }
 
@@ -253,6 +268,9 @@ footer{
         font-size: 40px;
         margin-top: 300px;
     }
+    .projects{
+        margin: 400px 0;
+    }
 }
 @media only screen and (max-width: 767px) {
     nav{
@@ -265,38 +283,21 @@ footer{
         padding: 12px 0;
     }
     h1{
-        font-size: 40px;
+        font-size: 60px;
     }
     h2{
-        font-size: 40px;
+        font-size: 36px;
     }
-    .projects h3{
-        font-size: 32px;
-    }
-    .magic-text{
-        animation: background-pan 3s linear infinite;
-        background: linear-gradient(
-        to right,
-        var(--blue),
-        var(--green),
-        var(--yellow),
-        var(--blue)
-        );
-        background-size: 200%;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        white-space: nowrap;
-        cursor: default;
-        font-size: 40px;
-    }
-    h1:hover > .magic-text {
-        font-size: 40px;
+    p{
+        margin-bottom: 50px;
     }
     .projects{
-        display: inline;
+        display: inline-block;
         margin: 200px 0;
         text-align: center;
-        align-items: center;
+    }
+    .projects:nth-child(odd){
+        text-align: center;
     }
     .projects img{
         object-fit: scale-down;
@@ -305,11 +306,6 @@ footer{
         display:inline;
         align-items: center;
         justify-content: flex-start;
-        margin: 300px 0;
-    }
-    .projects:nth-child(odd)
-    {
-        text-align: center;
     }
 }
 @media only screen and (max-width: 575px) {
@@ -323,7 +319,7 @@ footer{
         display: none;
     }
     h1{
-        font-size: 30px;
+        font-size: 52px;
     }
     .magic-text{
         font-size: 30px;
@@ -337,7 +333,7 @@ footer{
 }
 @media only screen and (max-width: 424px) {
     h1{
-        font-size: 28px;
+        font-size: 40px;
     }
     .magic-text{
         font-size: 28px;
@@ -348,7 +344,7 @@ footer{
 }
 @media only screen and (max-width: 374px) {
     h1{
-        font-size: 20px;
+        font-size: 32px;
     }
     .magic-text{
         font-size: 20px;
