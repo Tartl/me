@@ -31,11 +31,6 @@ body{
     position: fixed;
 }
 
-.container{
-    width: 80%;
-    margin: auto;
-}
-
 nav{
     font-size: 24px;
     text-align: right;
@@ -145,7 +140,6 @@ h1 {
     color: white;
     font-size: clamp(2em, 2vw, 4em);
     font-weight: 800;
-
 }
 
 a{
@@ -165,35 +159,47 @@ header{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(rgba(13, 110, 26, 0.2)  ,rgba(0,0,0,0.2));
+    background: linear-gradient(rgba(65, 53, 43, 0.2)  ,rgba(20, 17, 14, 0.2));
     background-size: cover;
     background-attachment: fixed;
     padding-left: 30px;
 }
 
-main .container{
-    display: flex;
-    flex-direction: row;
-    margin: 10px auto;
-    text-align: center;
-}
-
 .container{
     width: 80%;
     margin: auto;
+    border: solid 5px black;
 }
 
 h2{
     font-size: 60px;
 }
+.contacts{
+    width: calc(100% + 20px);
+    margin-left: -20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
 .contact-box{
     border: solid 3px rgb(65, 53, 43);
-    width: 40%;
-    margin: 10px auto;
-    padding: 20px;
+    margin: 50px auto;
+    padding: 15px 30px;
     box-shadow: 0px 0px 10px 5px rgb(24, 20, 16);
+    width:calc(33% - 20px);
+    margin-top: 20px;
+    margin-left: 20px;
+    flex-shrink: 0;
+
+    text-align: center;
+    font-weight: 300;
+    font-size: 20px;
 
     transition: .5s;
+}
+.contact-box a{
+    font-weight: 400;
 }
 
 .contact-box:hover{
@@ -232,6 +238,9 @@ h2{
     h1:hover > .magic-text {
         font-size: 40px;
     }
+    .contact-box{
+        font-size: 16px;
+    }
 }
 @media only screen and (max-width: 575px) {
     nav a{
@@ -246,8 +255,8 @@ h2{
     h1:hover > .magic-text {
         font-size: 30px;
     }
-    p{
-        font-size: 20px;
+    .contact-box{
+        font-size: 12px;
     }
 }
 @media only screen and (max-width: 424px) {
