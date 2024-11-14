@@ -288,7 +288,7 @@ footer{
     h2{
         font-size: 36px;
     }
-    p{
+    .projects p{
         margin-bottom: 50px;
     }
     .projects{
