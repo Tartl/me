@@ -10,8 +10,8 @@
     --primary:rgb(32, 27, 22);
     --secondary:rgb(13, 110, 26);  
 }
-html{
-    scroll-behavior: smooth;
+*, html {
+    scroll-behavior: smooth !important;
 }
 body{
     font-size: 24px;
